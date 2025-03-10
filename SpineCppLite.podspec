@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name                = 'SpineCppLite'
-  s.version             = '4.2.0'
+  s.version             = '4.2.0-jojo-0.0.1'
   s.summary             = 'Spine runtimes for iOS.'
   s.description         = <<-DESC
 Spine runtimes for iOS.
@@ -12,9 +12,9 @@ Spine runtimes for iOS.
   s.homepage            = 'https://esotericsoftware.com'
   s.author              = { "Esoteric Software LLC  " => "https://esotericsoftware.com" }
   s.license             = { :file => 'LICENSE' }
-  s.platform            = :ios, '13.0'
+  s.platform            = :ios, '10.0'
 
-  s.source              = { :git => 'https://github.com/esotericsoftware/spine-runtimes.git', :branch => '4.2' }
+  s.source              = { :git => 'https://github.com/weiched/spine-runtimes.git', :tag => s.version.to_s }
   s.source_files        =  'spine-cpp/spine-cpp/**/*.{h,cpp}', 'spine-cpp/spine-cpp-lite/*.{h,cpp}'
   s.module_map          = 'spine-cpp/spine-cpp-lite/module.modulemap'
   s.pod_target_xcconfig = {
